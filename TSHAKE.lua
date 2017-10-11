@@ -7656,12 +7656,16 @@ end
     end
      
   ----------------------------------------------------------------------------------------------- 
-if text:match("^[Dd][Ee][Vv]$")or text:match("^مطور بوت$") or text:match("^مطورين$") or text:match("^مطور البوت$") or text:match("^مطور$") or text:match("^المطور$") and msg.reply_to_message_id_ == 0 then
-local nkeko = redis:get('nmkeko'..bot_id)
-local nakeko = redis:get('nakeko'..bot_id)
-  
-sendContact(msg.chat_id_, msg.id_, 0, 1, nil, (nkeko or 9647707641864), (nakeko or "TshAke TEAM"), "", bot_id)
-end
+if text:match("^المطور$") or text:match("^المطورين$") or text:match("^مطور البوت$") or text:match("^مطور$") then
+local text =  [[
+•ＢＡＲКＯ √ Ᏸ๏τ
+➖➖➖➖ᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼ➖➖➖➖
+ • مطور البوت »
+👁‍🗨 •   DEV ┇ @D_1_T
+👁‍🗨 • TWSL┇ @Beko_tvbot
+➖➖➖➖ᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼ➖➖➖➖
+]]
+send(msg.chat_id_, msg.id_, 1, text, 1,  "html" ) end 
   for k,v in pairs(sudo_users) do
 local text = msg.content_.text_:gsub('تغير امر المطور','change ph')
 if text:match("^[Cc][Hh][Aa][Nn][Gg][Ee] [Pp][Hh]$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
