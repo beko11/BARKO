@@ -7658,12 +7658,13 @@ end
   ----------------------------------------------------------------------------------------------- 
 if text:match("^المطور$") or text:match("^المطورين$") or text:match("^مطور البوت$") or text:match("^مطور$") then
 local text =  [[
-•ＢＡＲКＯ √ Ᏸ๏τ
-➖➖➖➖ᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼ➖➖➖➖
- • مطور البوت »
-👁‍🗨 •   DEV ┇ @D_1_T
-👁‍🗨 • TWSL┇ @Beko_tvbot
-➖➖➖➖ᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼ➖➖➖➖
+•BOT BLACK ៲❘៲ 🚸
+ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ
+ • مۘطۄړېڼ ٱلَبِۅټ ✔️
+👁‍🗨 • DEV ┇ @iii313iiii
+👁‍🗨 • DEV ┇ @Abska1999 
+👁‍🗨 • TWS┇ @A_5bot
+ᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ𖤍ᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻᱻᱻ
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1,  "html" ) end 
   for k,v in pairs(sudo_users) do
@@ -8023,7 +8024,7 @@ end
 	send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 	-----------------------------------------------------------------------------------------------
-          local text = msg.content_.text_:gsub('كرر','echo')
+          local text = msg.content_.text_:gsub('كول','echo')
   	if text:match("^echo (.*)$") and is_mod(msg.sender_user_id_, msg.chat_id_) then
 	local txt = {string.match(text, "^(echo) (.*)$")} 
          send(msg.chat_id_, msg.id_, 1, txt[2], 1, 'md')
@@ -8584,18 +8585,18 @@ local user_msgs = database:get('user:msgs'..msg.chat_id_..':'..msg.sender_user_i
     end
          if not database:get('bot:id:mute'..msg.chat_id_) then
           if database:get('lang:gp:'..msg.chat_id_) then
-            sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"> Group ID : "..msg.chat_id_.."\n> Your ID : "..msg.sender_user_id_.."\n> UserName : "..get_info(msg.sender_user_id_).."\n> Your Rank : "..t.."\n> Msgs : "..user_msgs,msg.id_,msg.id_.."")
+            sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"> Your ID : "..msg.sender_user_id_.."\n> UserName : "..get_info(msg.sender_user_id_).."\n> Your Rank : "..t.."\n> Msgs : "..user_msgs,msg.id_,msg.id_.."")
   else 
-            sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"• ايدي المجموعه 📍 : "..msg.chat_id_.."\n• ايديك 📌 : "..msg.sender_user_id_.."\n• معرفك 🚹 : "..get_info(msg.sender_user_id_).."\n• موقعك *️⃣ : "..t.."\n• رسائلك 📝 : "..user_msgs,msg.id_,msg.id_.."")
+            sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"• ايديك 📌 : "..msg.sender_user_id_.."\n• معرفك 🚹 : "..get_info(msg.sender_user_id_).."\n• موقعك *️⃣ : "..t.."\n• رسائلك 📝 : "..user_msgs,msg.id_,msg.id_.."")
 end
 else 
       end
    else
          if not database:get('bot:id:mute'..msg.chat_id_) then
           if database:get('lang:gp:'..msg.chat_id_) then
-      send(msg.chat_id_, msg.id_, 1, "You Have'nt Profile Photo!!\n\n> *> Group ID :* "..msg.chat_id_.."\n*> Your ID :* "..msg.sender_user_id_.."\n*> UserName :* "..get_info(msg.sender_user_id_).."\n*> Msgs : *_"..user_msgs.."_", 1, 'md')
+      send(msg.chat_id_, msg.id_, 1, "You Have'nt Profile Photo!!\n\n> *> Your ID :* "..msg.sender_user_id_.."\n*> UserName :* "..get_info(msg.sender_user_id_).."\n*> Msgs : *_"..user_msgs.."_", 1, 'md')
    else 
-      send(msg.chat_id_, msg.id_, 1, "•`انت لا تملك صوره لحسابك ` ❗️\n\n•` ايدي المجموعه ` 📍 : "..msg.chat_id_.."\n•` ايديك ` 📌 : "..msg.sender_user_id_.."\n•` معرفك ` 🚹 : "..get_info(msg.sender_user_id_).."\n•` رسائلك `📝 : _"..user_msgs.."_", 1, 'md')
+      send(msg.chat_id_, msg.id_, 1, "•`انت لا تملك صوره لحسابك ` ❗️\n\n•` •` ايديك ` 📌 : "..msg.sender_user_id_.."\n•` معرفك ` 🚹 : "..get_info(msg.sender_user_id_).."\n•` رسائلك `📝 : _"..user_msgs.."_", 1, 'md')
 end
 else 
       end
@@ -8947,20 +8948,13 @@ end
    if text:match("^الاوامر$") and is_mod(msg.sender_user_id_, msg.chat_id_) then
    
    local text =  [[
-• هناك  6 اوامر لعرضها 🛠🦁
-ֆ • • • • • • • • • • • • • ֆ
-• `م1 : لعرض اوامر الحمايه` 🛡
-
-• `م2 : لعرض اوامر الحمايه بالتحذير` ⚠️
-
-• `م3 : لعرض اوامر الحمايه بالطرد` 🚷
-
-• `م4 : لعرض اوامر الادمنيه` 🔰
-
-• `م5 : لعرض اوامر المجموعه `💬
-
-• `م6 : لعرض اوامر المطورين `🤖
-ֆ • • • • • • • • • • • • • ֆ
+⋆ ⃭ اﯛامـﺭ البـﯢٺ ᤨ᤺  ✓
+ᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹᱹᱹ᳇ᱹᱹᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻ
+• م¹ ⃭ لعـرض اوامـر الحمـايه  ܏  🚸
+• م² ⃭ لعـرض اوامـر الادمـنيه  ܏  👨‍🎤
+• م³ ⃭ لعرض اوامر المجموعه  ܏  👥
+• م⁴ ⃭ لعرض اوامر المطـورين  ܏  👨🏻‍💻
+ᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹᱹᱹ᳇ᱹᱹᱹᱹᱹᱼᱼᱻᱻᱻᱻᱻᱻ
 ]]
                 send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
    end
@@ -9242,19 +9236,7 @@ end
 if text:match("^source$") or text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
    
    local text =  [[
-• <code>اهلا بك في سورس تشاكي</code> 🦁ֆ
-
-• <code>المطورين</code> ⚜️:-
-• <b>TshAkE TEAM </b>
-
-• <code>قناه السورس</code> ❇️:-
-•<b> Channel</b> | @lTSHAKEl_CH
-
-• <code>رابط Github cli </code>🔰:-
-• https://github.com/moodlIMyIl/TshAkE
-
-• <code>رابط Github api </code>🔰:-
-• https://github.com/moodlIMyIl/TshAkEapi
+• 
 ]]
                 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
    end
